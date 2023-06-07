@@ -1,0 +1,14 @@
+bin/
+build/
+*.txt.user
+*.pdb
+*.ilk
+*.obj
+*.log
+build_x64/CMakeFiles
+build_x64/x64
+build_x64/.vs
+build_x64/*.dir
+*.vcxproj.user
+*.vcxproj.filters
+*.cmake

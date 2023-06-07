@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60E5757B-7D48-3096-96A1-4C4EA35B7316}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\github\sb7code-master\include;E:\github\sb7code-master\extern\glfw-3.0.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\github\sb7code-master\include;E:\github\sb7code-master\extern\glfw-3.0.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\github\sb7code-master\include;E:\github\sb7code-master\extern\glfw-3.0.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\github\sb7code-master\include;E:\github\sb7code-master\extern\glfw-3.0.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\github\sb7code-master\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/github/sb7code-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/github/sb7code-master -BE:/github/sb7code-master/build_x64 --check-stamp-file E:/github/sb7code-master/build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.26\Modules\FindOpenMP.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;E:\github\sb7code-master\build\templates\vs2013.vcxproj.user.in;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeCCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\github\sb7code-master\build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/github/sb7code-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/github/sb7code-master -BE:/github/sb7code-master/build_x64 --check-stamp-file E:/github/sb7code-master/build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.26\Modules\FindOpenMP.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;E:\github\sb7code-master\build\templates\vs2013.vcxproj.user.in;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeCCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\github\sb7code-master\build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/github/sb7code-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/github/sb7code-master -BE:/github/sb7code-master/build_x64 --check-stamp-file E:/github/sb7code-master/build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.26\Modules\FindOpenMP.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;E:\github\sb7code-master\build\templates\vs2013.vcxproj.user.in;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeCCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\github\sb7code-master\build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/github/sb7code-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/github/sb7code-master -BE:/github/sb7code-master/build_x64 --check-stamp-file E:/github/sb7code-master/build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.26\Modules\FindOpenMP.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;E:\github\sb7code-master\build\templates\vs2013.vcxproj.user.in;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeCCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeCXXCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeRCCompiler.cmake;E:\github\sb7code-master\build_x64\CMakeFiles\3.26.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\github\sb7code-master\build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\ZERO_CHECK.vcxproj">
+      <Project>{40A05F5C-D976-3933-A4D5-5CCCC62EDA1B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\alienrain.vcxproj">
+      <Project>{EBB2C225-0C17-3A73-BD3E-E670302A1700}</Project>
+      <Name>alienrain</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\basicfbo.vcxproj">
+      <Project>{F8FA3255-E535-38BA-937F-354C40F4E798}</Project>
+      <Name>basicfbo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\bindlesstex.vcxproj">
+      <Project>{3B411AA9-AD34-3F29-80F1-4D2E33D31480}</Project>
+      <Name>bindlesstex</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\blendmatrix.vcxproj">
+      <Project>{A4045E12-CB2B-3384-9E28-782ED2732B25}</Project>
+      <Name>blendmatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\blinnphong.vcxproj">
+      <Project>{A1D95375-08D1-32C7-AC38-7EF4FFA59F58}</Project>
+      <Name>blinnphong</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\bumpmapping.vcxproj">
+      <Project>{2A59B3B1-E152-34B5-AD54-D8BF6247E37A}</Project>
+      <Name>bumpmapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\clipdistance.vcxproj">
+      <Project>{8EC967E8-D3CC-3DF5-8A54-68AF3E101DF3}</Project>
+      <Name>clipdistance</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\compressrgtc.vcxproj">
+      <Project>{41E8BB1A-5E7A-3C98-AFFC-7DAEF8570CA9}</Project>
+      <Name>compressrgtc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\csflocking.vcxproj">
+      <Project>{9006B4B2-3483-3BB4-9BC8-2422CCA72D72}</Project>
+      <Name>csflocking</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\cubemapenv.vcxproj">
+      <Project>{13AC9EF9-2C2D-3700-B553-219B8C80AA54}</Project>
+      <Name>cubemapenv</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\cubicbezier.vcxproj">
+      <Project>{0FCEBCA3-6D0D-3996-91E7-1A194193DC60}</Project>
+      <Name>cubicbezier</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\cullindirect.vcxproj">
+      <Project>{1168A1B0-CF73-3C04-A0AC-333112F83A8E}</Project>
+      <Name>cullindirect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\deferredshading.vcxproj">
+      <Project>{61619ECD-3E90-310C-B938-AAB701E7A77D}</Project>
+      <Name>deferredshading</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\depthclamp.vcxproj">
+      <Project>{1B5E8AB5-A998-30CB-8FE1-147F6807AE44}</Project>
+      <Name>depthclamp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\dflandscape.vcxproj">
+      <Project>{78EBD1F1-48DD-34D9-BB1E-2A80C8907385}</Project>
+      <Name>dflandscape</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\dispmap.vcxproj">
+      <Project>{8CA2CA1D-17F3-3903-BEFF-A7301FFC38F9}</Project>
+      <Name>dispmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\dof.vcxproj">
+      <Project>{1EFAFD9C-6904-3F70-98B3-657CF529FE8C}</Project>
+      <Name>dof</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\envmapsphere.vcxproj">
+      <Project>{42E515FB-D726-3DD6-B61F-820CCD9574E7}</Project>
+      <Name>envmapsphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\equirectangular.vcxproj">
+      <Project>{D38768A3-1472-3D76-BCA1-143696D6A16D}</Project>
+      <Name>equirectangular</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\fontdemo.vcxproj">
+      <Project>{11451D2A-16A1-32EA-8640-B2404FE5A75F}</Project>
+      <Name>fontdemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\fragcolorfrompos.vcxproj">
+      <Project>{13BA6FA9-994B-3720-9CC9-BE853D405FD6}</Project>
+      <Name>fragcolorfrompos</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\fragmentlist.vcxproj">
+      <Project>{D56E7EC3-FFE3-3C1F-9156-15C4038D9A23}</Project>
+      <Name>fragmentlist</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\grass.vcxproj">
+      <Project>{FC4BE483-EBCF-3E8B-BE83-B27E57611097}</Project>
+      <Name>grass</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\gsculling.vcxproj">
+      <Project>{7D8831F6-1C3F-35F2-930F-603869C1646B}</Project>
+      <Name>gsculling</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\gslayered.vcxproj">
+      <Project>{6265BEFE-8D6D-3446-9B0B-C3CB2E9BDFF6}</Project>
+      <Name>gslayered</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\gsquads.vcxproj">
+      <Project>{E8CB223D-04A2-3C9C-A9FF-9A9DD73B6A6E}</Project>
+      <Name>gsquads</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\gstessellate.vcxproj">
+      <Project>{57ECA441-0DFF-3F70-BFAA-C3F5FEFF456A}</Project>
+      <Name>gstessellate</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\hdrbloom.vcxproj">
+      <Project>{52B3A48D-70D7-36C0-BD33-778E330C0371}</Project>
+      <Name>hdrbloom</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\hdrexposure.vcxproj">
+      <Project>{3FF3C453-D8E6-3BB6-8C35-43AE8EFF2EB5}</Project>
+      <Name>hdrexposure</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\hdrtonemap.vcxproj">
+      <Project>{A56B6DCB-CF94-3687-A5CD-B9AF7A8B051C}</Project>
+      <Name>hdrtonemap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\hqfilter.vcxproj">
+      <Project>{52171D66-D9E7-3CE7-A03C-AEFDC31BB3D6}</Project>
+      <Name>hqfilter</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\indexedcube.vcxproj">
+      <Project>{693247DD-DC13-348E-B84D-65A88CC54655}</Project>
+      <Name>indexedcube</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\indirectmaterial.vcxproj">
+      <Project>{6CCBD593-C511-378C-A87A-F8626E1AD2B5}</Project>
+      <Name>indirectmaterial</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\instancedattribs.vcxproj">
+      <Project>{97D6BB1D-8B2E-315B-BE2F-88F64A529A64}</Project>
+      <Name>instancedattribs</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\julia.vcxproj">
+      <Project>{9262EF81-0895-31E6-9DE0-953248A34ED8}</Project>
+      <Name>julia</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\ktxview.vcxproj">
+      <Project>{930CAD72-A9EB-3329-920A-0C7FDACCA1E8}</Project>
+      <Name>ktxview</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\linesmooth.vcxproj">
+      <Project>{E9FA29AA-5E44-39A8-A6DD-D5388E2C794F}</Project>
+      <Name>linesmooth</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\mirrorclampedge.vcxproj">
+      <Project>{822E69EB-EA58-3172-8A20-D47C3F1459EE}</Project>
+      <Name>mirrorclampedge</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\movingtri.vcxproj">
+      <Project>{46A7CC8C-4F23-3BC2-9C62-B053FA7BEFB7}</Project>
+      <Name>movingtri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\msaanative.vcxproj">
+      <Project>{A5CE1354-0423-3CAC-B96A-CE35977A3664}</Project>
+      <Name>msaanative</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\multidrawindirect.vcxproj">
+      <Project>{EF2DD525-D39A-34D3-BD7C-BDFDCB0846E1}</Project>
+      <Name>multidrawindirect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\multiscissor.vcxproj">
+      <Project>{37A86834-DF87-31FD-B231-8C20B3D45860}</Project>
+      <Name>multiscissor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\multiviewport.vcxproj">
+      <Project>{1F7748AA-0A62-3AA4-92D0-402B0A686AC0}</Project>
+      <Name>multiviewport</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\noperspective.vcxproj">
+      <Project>{9491AC86-638D-3EF4-91FC-344D78A8360A}</Project>
+      <Name>noperspective</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\normalviewer.vcxproj">
+      <Project>{817FE301-8032-36C2-BDB2-33D7905803BA}</Project>
+      <Name>normalviewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\objectexploder.vcxproj">
+      <Project>{7A899A7D-5B62-3665-A8FA-F9E9EFC96014}</Project>
+      <Name>objectexploder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\ompparticles.vcxproj">
+      <Project>{DA0F866F-7DD0-3686-93A7-FEDC7981687D}</Project>
+      <Name>ompparticles</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\packetbuffer.vcxproj">
+      <Project>{82E56C8A-8DAF-31EB-9B2B-F3F166A9EF20}</Project>
+      <Name>packetbuffer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\perpixelgloss.vcxproj">
+      <Project>{7DA3ED77-CC45-31FA-A14C-30072DF052E3}</Project>
+      <Name>perpixelgloss</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\phonglighting.vcxproj">
+      <Project>{6A5FD0DA-C7B8-38BA-91E2-9CF469AB10C8}</Project>
+      <Name>phonglighting</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\pmbfractal.vcxproj">
+      <Project>{D3723364-E485-30F3-A237-14ED66ACAF91}</Project>
+      <Name>pmbfractal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\pmbstreaming.vcxproj">
+      <Project>{0B4628B6-4A74-3DA3-8E27-94512F980F23}</Project>
+      <Name>pmbstreaming</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\polygonsmooth.vcxproj">
+      <Project>{EBD32D60-7043-387D-A23F-20DAF93F9104}</Project>
+      <Name>polygonsmooth</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\prefixsum.vcxproj">
+      <Project>{73D4BA8D-9B2A-370E-9B38-E156D19250E5}</Project>
+      <Name>prefixsum</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\prefixsum2d.vcxproj">
+      <Project>{3B74DA90-2C03-3ED3-8F9C-5D7F3C21E1A9}</Project>
+      <Name>prefixsum2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\programinfo.vcxproj">
+      <Project>{9DA04D1D-4951-3FDB-9FFC-E958DAC20C70}</Project>
+      <Name>programinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\raytracer.vcxproj">
+      <Project>{DE8C124F-5AEA-31C0-86FD-8C13E5C52568}</Project>
+      <Name>raytracer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\rimlight.vcxproj">
+      <Project>{D57161CF-C1D2-3527-8B07-60A1CA0F3934}</Project>
+      <Name>rimlight</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\sampleshading.vcxproj">
+      <Project>{574A0651-6ADF-3D6C-A3BC-457A1128EC89}</Project>
+      <Name>sampleshading</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\sb7.vcxproj">
+      <Project>{4CBAF097-62E5-36D6-BC25-1BBE704F6FA6}</Project>
+      <Name>sb7</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\sdfdemo.vcxproj">
+      <Project>{BF53DFF7-3A9E-3BEE-B7AC-5C5F48161474}</Project>
+      <Name>sdfdemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\shadowmapping.vcxproj">
+      <Project>{77B7C18C-251B-34BD-8FAB-8ACB74C4EDB4}</Project>
+      <Name>shadowmapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\shapedpoints.vcxproj">
+      <Project>{9F56CE88-2731-37BE-9CA3-956FBDCD7111}</Project>
+      <Name>shapedpoints</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\simpleclear.vcxproj">
+      <Project>{D1D6B108-B2CF-3A22-97E0-271DAE2E23CC}</Project>
+      <Name>simpleclear</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\simpletexcoords.vcxproj">
+      <Project>{14C0F4F7-C525-3D35-AF9A-7F3FE4B8CFA9}</Project>
+      <Name>simpletexcoords</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\simpletexture.vcxproj">
+      <Project>{61C48798-C093-3FC5-87BA-B203DAA4B083}</Project>
+      <Name>simpletexture</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\singlepoint.vcxproj">
+      <Project>{3CCAB2DA-7EE3-35AD-A220-2B0FD5D50473}</Project>
+      <Name>singlepoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\singletri.vcxproj">
+      <Project>{44CF1DC6-E014-3847-9C70-7B8AB95247DA}</Project>
+      <Name>singletri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\sparsetexture.vcxproj">
+      <Project>{C04B80C4-A5AA-35A9-9837-CD8C38437FE8}</Project>
+      <Name>sparsetexture</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\spinnycube.vcxproj">
+      <Project>{D47667DE-6C25-32E7-8090-29B155844A1B}</Project>
+      <Name>spinnycube</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\springmass.vcxproj">
+      <Project>{342C52BE-6917-3D6C-9F37-A91F7F53803F}</Project>
+      <Name>springmass</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\ssao.vcxproj">
+      <Project>{C4AE34D3-A9F1-33D9-A57E-B8DB16E25DD9}</Project>
+      <Name>ssao</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\starfield.vcxproj">
+      <Project>{16F8BECC-EC7F-3110-A64F-86FCA770B9D1}</Project>
+      <Name>starfield</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\stereo.vcxproj">
+      <Project>{18C21616-40DD-3A55-94DC-3F2EF9B4B87F}</Project>
+      <Name>stereo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\subroutines.vcxproj">
+      <Project>{5F3EE51F-94E1-37E0-8A93-AD206217D1A9}</Project>
+      <Name>subroutines</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\tessellatedcube.vcxproj">
+      <Project>{D3BDD05C-CC2A-365B-86D3-BD5321DADD25}</Project>
+      <Name>tessellatedcube</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\tessellatedgstri.vcxproj">
+      <Project>{6BA70810-1C05-33ED-AA2A-29A1855890E6}</Project>
+      <Name>tessellatedgstri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\tessellatedtri.vcxproj">
+      <Project>{1CBB544C-949D-3F61-B102-417ECD4E6B7D}</Project>
+      <Name>tessellatedtri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\tessmodes.vcxproj">
+      <Project>{02EE887C-9778-3577-AEB2-52A6EF0B69F5}</Project>
+      <Name>tessmodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\tesssubdivmodes.vcxproj">
+      <Project>{7919DCAF-E003-354F-BA5B-AA7436B654B4}</Project>
+      <Name>tesssubdivmodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\toonshading.vcxproj">
+      <Project>{8DA7A936-6C94-32A4-8A51-1F1D6B3318B6}</Project>
+      <Name>toonshading</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\tunnel.vcxproj">
+      <Project>{6CCD698F-F59A-31C2-9A1E-2FA3CCF71744}</Project>
+      <Name>tunnel</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\github\sb7code-master\build_x64\wrapmodes.vcxproj">
+      <Project>{FE14F5C3-1590-365B-88DF-3F61175C944A}</Project>
+      <Name>wrapmodes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
