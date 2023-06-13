@@ -19,7 +19,7 @@ in VS_OUT
     smooth vec3 N;
     smooth vec3 L;
     smooth vec3 V;
-    int material_id;
+    flat int material_id;
 } fs_in;
 
 void main(void)
